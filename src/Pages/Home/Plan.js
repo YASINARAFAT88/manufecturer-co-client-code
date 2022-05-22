@@ -23,7 +23,7 @@ const Plan = () => {
     <div className='w-96'>
       <h1 className="text-5xl font-bold">Our work planing!</h1>
       <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button class="btn text-white w-44 hover:font-bold rounded-full bg-gradient-to-r from-cyan-800 to-gray-800">Get Started</button>
+      <button className="btn text-white w-44 hover:font-bold rounded-full bg-gradient-to-r from-cyan-800 to-gray-800">Get Started</button>
     </div>
   </div>
 </div>

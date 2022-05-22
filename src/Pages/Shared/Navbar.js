@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const navItems = <>
         <li className='hover:bg-gray-500 rounded-md bg-gray-800 mb-1'><Link to="/">Home</Link></li>
-        <li className='hover:bg-gray-500 rounded-md bg-gray-800 mb-1'><Link to="/purches">Purches</Link></li>
+        <li className='hover:bg-gray-500 rounded-md bg-gray-800 mb-1'><Link to="/purches">Items</Link></li>
         <li className='hover:bg-gray-500 rounded-md bg-gray-800 mb-1'><Link to="/dashboard">DashBoard</Link></li>
         <li className='hover:bg-gray-500 rounded-md bg-gray-800 mb-1'><Link to="/myprofile">My-Profile</Link></li>
         <li className='hover:bg-gray-500 rounded-md bg-gray-800 mb-1'><Link to="/blog">Blog</Link></li>

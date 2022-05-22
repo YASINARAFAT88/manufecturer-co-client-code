@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Mirror",
+        "price": "300",
+        "quantity": 5,
+        "supplier": "Abdul Alim",
+        "description": "Canvas paper offers a big advantage over stretched canvas when it comes to reproducing and framing. You ",
+        "img": "https://i.pinimg.com/originals/4a/0c/71/4a0c713024a320837a80f151cb29d8ab.jpg"
+    },
+    {
+        "name": "Hexagon Self",
+        "price": "100",
+        "quantity": 4,
+        "supplier": "Nasif uddin",
+        "description": "instead of a glass-covered one. You should find styles that have a groove and clips to hold the canvas aheed. ",
+        "img": "https://m.media-amazon.com/images/I/71zvpSP9lVS._AC_SX466_.jpg"
+    },
+    {
+        "name": "Mirror",
+        "price": "300",
+        "quantity": 5,
+        "supplier": "Puja Cheri",
+        "description": "Canvas paper offers a big advantage over stretched canvas when it comes to reproducing and framing. You ",
+        "img": "https://i.pinimg.com/originals/4a/0c/71/4a0c713024a320837a80f151cb29d8ab.jpg"
+    },
+    {
+        "name": "Canvas",
+        "price": "150",
+        "quantity": 3,
+        "supplier": "Asim ullah",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias ..",
+        "img": "https://s.alicdn.com/@sc04/kf/H00058dc0286e43408b72680f9702d318x.jpg_300x300.jpg"
+    },
+    {
+        "name": "Frem wooden",
+        "price": "180",
+        "quantity": 6,
+        "supplier": "Elon jorj",
+        "description": "The layer of gesso that covers the canvas before painting is an essential art supply. A paint supply .",
+        "img": "https://www.picaframehsv.com/wp-content/uploads/2014/12/image.jpg"
+    },
+    {
+        "name": "Wooden table",
+        "price": "100",
+        "quantity": 5,
+        "supplier": "Mahedii Lal",
+        "description": "canvas, for example: Gesso your canvas before you paint. A major advantage of gesso is that it can be applied ",
+        "img": "https://static.vecteezy.com/system/resources/previews/002/317/778/large_2x/background-image-of-woodworking-workshop-carpenters-work-table-with-different-tools-and-wood-cutting-stand-vintage-filter-image-free-photo.jpg"
+    },
+    {
+        "name": "Wooden chair",
+        "price": "100",
+        "quantity": 5,
+        "supplier": "Ali Lal",
+        "description": "canvas, for example: Gesso your canvas before you paint. A major advantage of gesso is that it can be applied ",
+        "img": "https://s3.envato.com/files/292350006/22040.jpg"
+    },
+    {
+        "name": "Canvas Glue",
+        "price": "300",
+        "quantity": 6,
+        "supplier": "Fakir uddin",
+        "description": "don't need to dab gesso on the paper, but you can do so if you wish. These papers are suitable for applying ",
+        "img": "https://images.younghouselove.com/2011/05/spray-mounting-ocean1.jpg"
+    },
+    {
+        "name": "Canvas",
+        "price": "150",
+        "quantity": 3,
+        "supplier": "Asim ullah",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias ..",
+        "img": "https://s.alicdn.com/@sc04/kf/H00058dc0286e43408b72680f9702d318x.jpg_300x300.jpg"
+    }
+]

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Package = () => {
     return (
-        <div className="stats stats-vertical ml-40 bg-slate-600 text-white m-8 lg:stats-horizontal shadow">
+        <div className="stats stats-vertical ml-52 m-8 bg-slate-700 text-white  lg:stats-horizontal shadow">
   
   <div className="stat">
     <div className="stat-title">Downloads</div>
