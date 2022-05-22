@@ -9,7 +9,9 @@ const Banner = () => {
     <div class="max-w-md">
       <h1 class="text-3xl font-bold">Hallo! Welcome To Manufacturer-Co</h1>
       <p class="py-6">We Provid whole selling Manufacturer items assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button class="btn btn-primary">Get Started</button>
+      
+      <button class="btn text-white w-64 hover:font-bold rounded-full bg-gradient-to-r from-cyan-800 to-gray-800">Get Started</button>
+      
     </div>
   </div>
 </div>
