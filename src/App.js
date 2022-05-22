@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Pages/Shared/Navbar';
 import Home from './Pages/Home/Home';
 import MyProfile from './Pages/MyProfile/MyProfile';
+import Login from './Pages/Login/Login';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
     <Navbar></Navbar>
     <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<MyProfile />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="myprofile" element={<MyProfile />} />
       </Routes>
     </div>
   );
