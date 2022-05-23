@@ -1,19 +1,19 @@
 import React from 'react';
 import auth from '../../firebase.init';
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
 import {Link} from 'react-router-dom';
 
-const Login = () => {
+const SignUp = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [
-        signInWithEmailAndPassword,
+        createUserWithEmailAndPassword,
         user,
         loading,
         error,
-      ] = useSignInWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth);
 
       let signInError;
 
@@ -29,16 +29,36 @@ const Login = () => {
     }
     const onSubmit = data => {
         console.log(data)
-        signInWithEmailAndPassword(data.email, data.password)
+        createUserWithEmailAndPassword(data.email, data.password)
     };
     return (
         <div className='flex justify-center items-center h-screen'>
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body">
-                 <h2 className="text-center text-2xl font-bold">Login</h2>
+                 <h2 className="text-center text-2xl font-bold">Sign Up</h2>
 
     <form onSubmit={handleSubmit(onSubmit)}>
 
+    <div class="form-control w-full max-w-xs">
+  <label class="label">
+    <span class="label-text">Name</span>
+  </label>
+  <input 
+  type="text" 
+  placeholder="Type your Name" 
+  class="input input-bordered w-full max-w-xs" 
+  {...register("name",  {
+      required: {
+        value: true,
+        message: 'Name is required'
+      }
+  })}
+  />
+  <label class="label">
+  {errors.name?.type === 'required' && <span class="label-text-alt text-red-500">{errors.name.message}</span>}
+  
+  </label>
+</div>
     <div class="form-control w-full max-w-xs">
   <label class="label">
     <span class="label-text">Email</span>
@@ -89,10 +109,10 @@ const Login = () => {
   </label>
 </div>
       {signInError}
-      <input className='btn w-full max-w-xs' value='Login' type="submit" />
+      <input className='btn w-full max-w-xs' value='SIGNUP' type="submit" />
     </form>
 
-    <p><small>New to Menufecturer-Co? <Link className='text-blue-500' to='/signup'> Create New Account</Link></small></p>
+    <p><small>All ready have an Account? <Link className='text-blue-500' to='/signup'> Please Login</Link></small></p>
     <div className='divider'>OR</div>
     <button onClick={()=> signInWithGoogle()} className='btn btn-outline'>Continue With Google</button>
   </div>
@@ -101,4 +121,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default SignUp;

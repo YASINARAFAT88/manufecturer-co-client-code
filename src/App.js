@@ -9,6 +9,7 @@ import { createContext, useEffect, useState } from 'react';
 import Purches from './Pages/WholeSellItems/Purches';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import DashBoard from './Pages/WholeSellItems/DashBoard';
+import SignUp from './Pages/Login/SignUp';
 
 export const HooksContext = createContext('data')
 
@@ -27,6 +28,7 @@ function App() {
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path='/purches' element={<Purches />} />
         <Route path="myprofile" element={<MyProfile />} />
         <Route path="/dashboard/:dashboardId" element={<DashBoard />} />
