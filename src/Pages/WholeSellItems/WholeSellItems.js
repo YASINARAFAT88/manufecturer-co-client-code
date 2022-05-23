@@ -20,7 +20,7 @@ const WholeSellItems = () => {
             }
         </div>
         <div className='btn-div'>
-            <button onClick={() => naviGate('/purches')} className='review-btn btn text-white w-44 hover:font-bold rounded-full bg-gradient-to-r from-cyan-800 to-gray-800 text-center font-bold'>See All Items</button>
+            <button onClick={() => naviGate('/purches')} className='review-btn btn text-white w-44 hover:text-xl rounded-full bg-gradient-to-r from-cyan-800 to-gray-800 text-center font-bold'>See All Items</button>
         </div>
     </div>
     );

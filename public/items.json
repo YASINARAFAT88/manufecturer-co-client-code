@@ -1,74 +1,74 @@
 [
     {
-        "name": "Mirror",
-        "price": "300",
-        "quantity": 5,
-        "supplier": "Abdul Alim",
+        "name": "Driller",
+        "price": 12000,
+        "Available": 5000,
+        "Perunit": 100,
         "description": "Canvas paper offers a big advantage over stretched canvas when it comes to reproducing and framing. You ",
-        "img": "https://i.pinimg.com/originals/4a/0c/71/4a0c713024a320837a80f151cb29d8ab.jpg"
+        "img": "https://static.independent.co.uk/2022/04/29/17/cordless%20drills.jpg?quality=75&width=982&height=726&auto=webp"
     },
     {
-        "name": "Hexagon Self",
-        "price": "100",
-        "quantity": 4,
-        "supplier": "Nasif uddin",
+        "name": "Range",
+        "price": 3000,
+        "quantity": 4000,
+        "Perunit": 100,
         "description": "instead of a glass-covered one. You should find styles that have a groove and clips to hold the canvas aheed. ",
-        "img": "https://m.media-amazon.com/images/I/71zvpSP9lVS._AC_SX466_.jpg"
+        "img": "https://i.ebayimg.com/images/g/jXIAAOSwF8RepWHN/s-l640.jpg"
     },
     {
-        "name": "Mirror",
-        "price": "300",
-        "quantity": 5,
-        "supplier": "Puja Cheri",
+        "name": "Plus",
+        "price": 6000,
+        "quantity": 5000,
+        "Perunit": 100,
         "description": "Canvas paper offers a big advantage over stretched canvas when it comes to reproducing and framing. You ",
-        "img": "https://i.pinimg.com/originals/4a/0c/71/4a0c713024a320837a80f151cb29d8ab.jpg"
+        "img": "https://engineeringlearn.com/wp-content/uploads/2021/07/Bolt-Cutter-1024x539.jpg"
     },
     {
-        "name": "Canvas",
-        "price": "150",
-        "quantity": 3,
-        "supplier": "Asim ullah",
+        "name": "Cutter",
+        "price": 600,
+        "quantity": 3000,
+        "Perunit": 50,
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias ..",
-        "img": "https://s.alicdn.com/@sc04/kf/H00058dc0286e43408b72680f9702d318x.jpg_300x300.jpg"
+        "img": "https://www.verpacking.com/media/image/product/30031/lg/cutter-knifes-and-spare-blades.jpg"
     },
     {
-        "name": "Frem wooden",
-        "price": "180",
-        "quantity": 6,
-        "supplier": "Elon jorj",
+        "name": "Blade Knife",
+        "price": 2500,
+        "quantity": 6000,
+        "Perunit": 100,
         "description": "The layer of gesso that covers the canvas before painting is an essential art supply. A paint supply .",
-        "img": "https://www.picaframehsv.com/wp-content/uploads/2014/12/image.jpg"
+        "img": "https://www.ubuy.com.bd/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFaOTNhbzNvR0wuX0FDX1NMMTUwMF8uanBn.jpg"
     },
     {
-        "name": "Wooden table",
-        "price": "100",
-        "quantity": 5,
-        "supplier": "Mahedii Lal",
+        "name": "Scrue",
+        "price": 200,
+        "quantity": 50000,
+        "Perunit": 100,
         "description": "canvas, for example: Gesso your canvas before you paint. A major advantage of gesso is that it can be applied ",
-        "img": "https://static.vecteezy.com/system/resources/previews/002/317/778/large_2x/background-image-of-woodworking-workshop-carpenters-work-table-with-different-tools-and-wood-cutting-stand-vintage-filter-image-free-photo.jpg"
+        "img": "https://cdna.artstation.com/p/assets/images/images/042/221/860/large/david-manoj-x-hkngdd.jpg?1633929144"
     },
     {
-        "name": "Wooden chair",
-        "price": "100",
-        "quantity": 5,
-        "supplier": "Ali Lal",
-        "description": "canvas, for example: Gesso your canvas before you paint. A major advantage of gesso is that it can be applied ",
-        "img": "https://s3.envato.com/files/292350006/22040.jpg"
+        "name": "Plus",
+        "price": 6000,
+        "quantity": 5000,
+        "Perunit": 100,
+        "description": "Canvas paper offers a big advantage over stretched canvas when it comes to reproducing and framing. You ",
+        "img": "https://engineeringlearn.com/wp-content/uploads/2021/07/Bolt-Cutter-1024x539.jpg"
     },
     {
-        "name": "Canvas Glue",
-        "price": "300",
-        "quantity": 6,
-        "supplier": "Fakir uddin",
-        "description": "don't need to dab gesso on the paper, but you can do so if you wish. These papers are suitable for applying ",
-        "img": "https://images.younghouselove.com/2011/05/spray-mounting-ocean1.jpg"
+        "name": "Range",
+        "price": 3000,
+        "quantity": 4000,
+        "Perunit": 100,
+        "description": "instead of a glass-covered one. You should find styles that have a groove and clips to hold the canvas aheed. ",
+        "img": "https://i.ebayimg.com/images/g/jXIAAOSwF8RepWHN/s-l640.jpg"
     },
     {
-        "name": "Canvas",
-        "price": "150",
-        "quantity": 3,
-        "supplier": "Asim ullah",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias ..",
-        "img": "https://s.alicdn.com/@sc04/kf/H00058dc0286e43408b72680f9702d318x.jpg_300x300.jpg"
+        "name": "Driller",
+        "price": 12000,
+        "Available": 5000,
+        "Perunit": 100,
+        "description": "Canvas paper offers a big advantage over stretched canvas when it comes to reproducing and framing. You ",
+        "img": "https://static.independent.co.uk/2022/04/29/17/cordless%20drills.jpg?quality=75&width=982&height=726&auto=webp"
     }
 ]

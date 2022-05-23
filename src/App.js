@@ -8,6 +8,7 @@ import Footer from './Pages/Home/Footer';
 import { createContext, useEffect, useState } from 'react';
 import Purches from './Pages/WholeSellItems/Purches';
 import NotFound from './Pages/Shared/NotFound/NotFound';
+import DashBoard from './Pages/WholeSellItems/DashBoard';
 
 export const HooksContext = createContext('data')
 
@@ -15,7 +16,7 @@ function App() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch('items.json')
+    fetch('http://localhost:5000/items')
       .then(res => res.json())
       .then(data => setItems(data))
   }, [])
@@ -28,6 +29,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path='/purches' element={<Purches />} />
         <Route path="myprofile" element={<MyProfile />} />
+        <Route path="/dashboard/:dashboardId" element={<DashBoard />} />
         <Route path="*" element={<NotFound />} />
     </Routes>
     </HooksContext.Provider>

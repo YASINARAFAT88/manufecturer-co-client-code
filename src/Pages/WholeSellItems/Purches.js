@@ -24,10 +24,10 @@ const Purches = () => {
                                 <p className='pl-4 pr-4'>{item.description}</p>
                                 <h6 className='pl-4 pr-4'>Price: {item.price}</h6>
                                 <h6 className='pl-4 pr-4'>Quantity: {item.quantity}</h6>
-                                <h5 className='pl-4 pr-4'>Supplier: {item.supplier}</h5>
+                                <h5 className='pl-4 pr-4'>Per-Unit: {item.Perunit}</h5>
                             </div>
                             <button onClick={() => (item._id)} className='btn btn text-red-400 w-32 hover:font-bold text-xl rounded-full bg-gradient-to-r from-cyan-800 to-gray-800 text-center  ml-5 mr-5 my-5'>Delete</button>
-                            <button className='btn btn text-green-400 w-32 hover:font-bold rounded-full text-xl bg-gradient-to-r from-cyan-800 to-gray-800 text-center '>Buy Now</button>
+                            <button className='btn btn text-green-400 w-32 hover:text-green-200 rounded-full text-xl bg-gradient-to-r from-cyan-800 to-gray-800 text-center '>Buy Now</button>
                         </div>
                     </div>
                 </div>)}
