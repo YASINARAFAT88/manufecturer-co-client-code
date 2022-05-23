@@ -1,14 +1,23 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 const Navbar = () => {
+
+  const [user, loading, error] = useAuthState(auth);
+  const logout = () =>{
+    signOut(auth)
+  }
+
   const navItems = <>
         <li className='hover:bg-gray-500 rounded-md bg-gray-800 mb-1'><Link to="/">Home</Link></li>
         <li className='hover:bg-gray-500 rounded-md bg-gray-800 mb-1'><Link to="/purches">Items</Link></li>
         <li className='hover:bg-gray-500 rounded-md bg-gray-800 mb-1'><Link to="/dashboard">DashBoard</Link></li>
         <li className='hover:bg-gray-500 rounded-md bg-gray-800 mb-1'><Link to="/myprofile">My-Profile</Link></li>
         <li className='hover:bg-gray-500 rounded-md bg-gray-800 mb-1'><Link to="/blog">Blog</Link></li>
-        <li className='hover:bg-gray-500 rounded-md bg-gray-800'><Link to="/login">Login</Link></li>
+        <li className='hover:bg-gray-500 rounded-md bg-gray-800'>{ user ? <button className='btn btn-ghost text-bold' onClick={logout}>SignOut</button> :<Link to="/login">Login</Link>}</li>
   </>
     return (
         <div className="navbar bg-gray-800 text-white justify-between">

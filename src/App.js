@@ -10,6 +10,7 @@ import Purches from './Pages/WholeSellItems/Purches';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import DashBoard from './Pages/WholeSellItems/DashBoard';
 import SignUp from './Pages/Login/SignUp';
+import RequireAuth from './Pages/Login/RequireAuth';
 
 export const HooksContext = createContext('data')
 
@@ -31,7 +32,10 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path='/purches' element={<Purches />} />
         <Route path="myprofile" element={<MyProfile />} />
-        <Route path="/dashboard/:dashboardId" element={<DashBoard />} />
+        <Route path="/dashboard/:dashboardId" element={<RequireAuth>
+          <DashBoard />
+        </RequireAuth>
+        } />
         <Route path="*" element={<NotFound />} />
     </Routes>
     </HooksContext.Provider>

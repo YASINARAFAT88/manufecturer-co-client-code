@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useParams } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 const DashBoard = () => {
     const { dashboardId } = useParams();
     const [items, setItems] = useState({});
+    const [user, loading, error] = useAuthState(auth)
     useEffect(() => {
 
         const url = `http://localhost:5000/items/${dashboardId}`;
@@ -14,6 +17,7 @@ const DashBoard = () => {
     }, [])
     return (
         <div>
+            <h2 className='text-center font-bold text-2xl text-gray-600'> Hello..{user?.displayName}</h2>
             <div className='shadow rounded bg-dark w-96 m-3 mx-auto bg-gray-800'>
                 <div className='stock'>
                     <div style={{ height: '450px' }} className='text-white'>
@@ -25,10 +29,9 @@ const DashBoard = () => {
                         <h5 className='pl-4 pr-4'>Per-unit: {items.Perunit}</h5>
                     </div>
                     <form>
-                        <input className='ml-4 mb-3' placeholder='Restock' type="text" />
+                        <input className='ml-4 mb-3' placeholder=' Type Quantity' type="text" />
                     </form>
-                    <button className='btn btn text-red-400 w-32 hover:font-bold text-xl rounded-full bg-gradient-to-r from-cyan-800 to-gray-800 m-3'>Delivered</button>
-                    <button className='btn btn text-green-400 w-32 hover:font-bold text-xl rounded-full bg-gradient-to-r from-cyan-800 to-gray-800   m-3'>Restock</button>
+                    
                 </div>
             </div>
             <div className='text-center'>

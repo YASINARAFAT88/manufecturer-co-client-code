@@ -3,11 +3,12 @@ import auth from '../../firebase.init';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
-import {Link} from 'react-router-dom';
+import {Link, useLocation, useNavigate, useParams} from 'react-router-dom';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
+    const { dashboardId } = useParams();
     const [
         signInWithEmailAndPassword,
         user,
@@ -16,7 +17,9 @@ const Login = () => {
       ] = useSignInWithEmailAndPassword(auth);
 
       let signInError;
-
+      const navigate = useNavigate();
+      const location = useLocation();
+      let from = location.state?.from?.pathname || '/'
       if(loading || gLoading){
           return <Loading />
       }
@@ -26,10 +29,12 @@ const Login = () => {
 
     if(gUser || user){
         console.log(user)
+        navigate(from, {replace: true})
     }
     const onSubmit = data => {
         console.log(data)
-        signInWithEmailAndPassword(data.email, data.password)
+        signInWithEmailAndPassword(data.email, data.password);
+        navigate('/dashboard/:dashboardId')
     };
     return (
         <div className='flex justify-center items-center h-screen'>
