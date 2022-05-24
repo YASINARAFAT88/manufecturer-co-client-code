@@ -11,6 +11,11 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import DashBoard from './Pages/WholeSellItems/DashBoard';
 import SignUp from './Pages/Login/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import MyOrders from './Pages/My-Orders/MyOrders';
+import Statment from './Pages/My-Orders/Statment';
+import MyReview from './Pages/My-Orders/MyReview';
 
 export const HooksContext = createContext('data')
 
@@ -36,8 +41,20 @@ function App() {
           <DashBoard />
         </RequireAuth>
         } />
+        <Route path="/dashboard" element={<RequireAuth>
+          <DashBoard />
+        </RequireAuth>
+        } />
+        <Route path="/dashboards" element={<RequireAuth>
+          <MyOrders />
+        </RequireAuth>
+        }> 
+        <Route index element={<Statment></Statment>}></Route>
+        <Route path='review' element={<MyReview></MyReview>}></Route>
+        </Route>
         <Route path="*" element={<NotFound />} />
     </Routes>
+    <ToastContainer />
     </HooksContext.Provider>
     <Footer></Footer>
     </div>
