@@ -21,19 +21,18 @@ const DashBoard = () => {
     
     const haldleBooking = event =>{
         event.preventDefault();
-        const Quantity = event.target.Quantity.value;
+        const quantity = event.target.Quantity.value;
         const email = event.target.email.value;
         const name = event.target.name.value;
         const itemsName = event.target.itemsName.value;
         const phone = event.target.phone.value;
         
-        console.log(Quantity, email, name, itemsName, phone)
         const booking = {
             dashboardId: dashboardId,
-            perUnit: Quantity,
-            Email: email,
-            Name: name,
-            Item: itemsName
+            perUnit: quantity,
+            email: email,
+            name: name,
+            item: itemsName
         }
 
         fetch('http://localhost:5000/booking', {
