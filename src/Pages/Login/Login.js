@@ -4,6 +4,7 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
 import {Link, useLocation, useNavigate, useParams} from 'react-router-dom';
+import useToken from '../../hooks/useToken';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -15,12 +16,18 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
+      const [token] = useToken(user || gUser);
 
       useEffect(()=>{
-        if(gUser || user){
+        if(token){
             navigate(from, {replace: true})
         }
-      },[user, gUser])
+      },[token])
+
+    //   if(token){
+    //     console.log(user)
+    //     navigate('/home')
+    // }
 
       let signInError;
       const navigate = useNavigate();
