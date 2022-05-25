@@ -15,6 +15,7 @@ const MyOrders = () => {
       {/* <!-- Sidebar content here --> */}
       <li><Link to='/dashboards'>DashBoard</Link></li>
       <li><Link to='/dashboards/review'>Review</Link></li>
+      <li><Link to='/dashboards/users'>All Users</Link></li>
     </ul>
   
   </div>
