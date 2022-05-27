@@ -14,7 +14,7 @@ const Statment = () => {
             fetch(`http://localhost:5000/booking?email=${user.email}`, {
               method: 'GET',
               headers: {
-                'authorization' : `bearer ${localStorage.getItem('accessToken')}`
+                authorization : `Bearer ${localStorage.getItem('accessToken')}`
               }
             })
             .then(res => {
@@ -30,7 +30,7 @@ const Statment = () => {
     }, [user])
     return (
         <div>
-            <h2>My Statment {statment.length}</h2>
+            <h2 className='text-2xl'>My Order {statment.length}</h2>
             <div class="overflow-x-auto">
   <table class="table w-full">
     <thead>
@@ -49,7 +49,7 @@ const Statment = () => {
                 <td>{a.name}</td>
                 <td>{a.email}</td>
                 <td>{a.item}</td>
-                <td>{a.perUnit}</td>
+                <td>{a.price}</td>
               </tr>)
           }
     </tbody>
