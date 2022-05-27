@@ -1,0 +1,10 @@
+.about{
+    margin: auto;
+    text-align: center;
+    width: 400px;
+}
+.my-pic{
+    margin: auto;
+    height: 300px;
+    border-radius: 20px;
+}
