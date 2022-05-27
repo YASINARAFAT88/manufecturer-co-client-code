@@ -9,6 +9,21 @@ const Statment = () => {
     const [user] = useAuthState(auth)
     const navigate = useNavigate()
 
+    const handleDelete = id =>{
+      const proceed = window.confirm('Are you sure you want to Delete your Order..?')
+      if(proceed){
+        const url = `http://localhost:5000/booking/${id}`
+        fetch(url, {
+          method: 'DELETE'
+        })
+        .then(res => res.json())
+        .then(data => {
+          const remaining = statment.filter(a => a._id !== id)
+          setStatment(remaining)
+          console.log(data)
+        })
+      }
+    }
     useEffect(()=>{
         if(user){
             fetch(`http://localhost:5000/booking?email=${user.email}`, {
@@ -29,7 +44,7 @@ const Statment = () => {
         }
     }, [user])
     return (
-        <div>
+        <div className='m-6'>
             <h2 className='text-2xl'>My Order {statment.length}</h2>
             <div class="overflow-x-auto">
   <table class="table w-full">
@@ -39,7 +54,7 @@ const Statment = () => {
         <th>Name</th>
         <th>Email</th>
         <th>Item</th>
-        <th>Price</th>
+        <th>Delete Item</th>
       </tr>
     </thead>
     <tbody>
@@ -49,7 +64,7 @@ const Statment = () => {
                 <td>{a.name}</td>
                 <td>{a.email}</td>
                 <td>{a.item}</td>
-                <td>{a.price}</td>
+                <td><button onClick={() => handleDelete(a._id)} className='btn btn-xs w-24'>Delete</button></td>
               </tr>)
           }
     </tbody>

@@ -24,7 +24,7 @@ const UserRow = ({user, refetch}) => {
         <th></th>
         <td>{ email}</td>
         <td>{ role !== 'admin' && <button onClick={makeAdmin} class="btn btn-xs">Make Admin</button>}</td>
-        <td><button class="btn btn-xs">Remove User</button></td>
+        <td><button className="btn btn-xs">Remove User</button></td>
     </tr>
     );
 };
