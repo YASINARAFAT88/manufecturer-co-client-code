@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 const MyReview = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-    const url = `http://localhost:5000/reviews`
+    const url = `https://guarded-shelf-84070.herokuapp.com/reviews`
           fetch(url,{
             method: "POST",
             headers: {

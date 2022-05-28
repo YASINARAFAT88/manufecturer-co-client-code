@@ -24,11 +24,6 @@ const Login = () => {
         }
       },[token])
 
-    //   if(token){
-    //     console.log(user)
-    //     navigate('/home')
-    // }
-
       let signInError;
       const navigate = useNavigate();
       const location = useLocation();

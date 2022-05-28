@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useParams } from 'react-router-dom';
 import auth from '../../firebase.init';
-import { toast } from 'react-toastify';
 
 const DashBoard = () => {
     const { dashboardId } = useParams();
@@ -11,7 +10,7 @@ const DashBoard = () => {
    
     useEffect(() => {
 
-        const url = `http://localhost:5000/items/${dashboardId}`;
+        const url = `https://guarded-shelf-84070.herokuapp.com/items/${dashboardId}`;
         console.log(url);
         fetch(url)
             .then(res => res.json())
@@ -35,7 +34,7 @@ const DashBoard = () => {
             item: itemsName
         }
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://guarded-shelf-84070.herokuapp.com/booking', {
 
             method: 'POST',
             headers: {

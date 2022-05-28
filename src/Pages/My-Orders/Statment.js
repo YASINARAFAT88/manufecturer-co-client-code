@@ -12,7 +12,7 @@ const Statment = () => {
     const handleDelete = id =>{
       const proceed = window.confirm('Are you sure you want to Delete your Order..?')
       if(proceed){
-        const url = `http://localhost:5000/booking/${id}`
+        const url = `https://guarded-shelf-84070.herokuapp.com/booking/${id}`
         fetch(url, {
           method: 'DELETE'
         })
@@ -26,7 +26,7 @@ const Statment = () => {
     }
     useEffect(()=>{
         if(user){
-            fetch(`http://localhost:5000/booking?email=${user.email}`, {
+            fetch(`https://guarded-shelf-84070.herokuapp.com/booking?email=${user.email}`, {
               method: 'GET',
               headers: {
                 authorization : `Bearer ${localStorage.getItem('accessToken')}`

@@ -17,7 +17,7 @@ import MyOrders from './Pages/My-Orders/MyOrders';
 import Statment from './Pages/My-Orders/Statment';
 import MyReview from './Pages/My-Orders/MyReview';
 import Users from './Pages/My-Orders/Users';
-import RequireAdmin from './Pages/Login/RequireAdmin';
+import Blog from './Pages/MyProfile/Blog';
 
 export const HooksContext = createContext('data')
 
@@ -25,7 +25,7 @@ function App() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/items')
+    fetch('https://guarded-shelf-84070.herokuapp.com/items')
       .then(res => res.json())
       .then(data => setItems(data))
   }, [])
@@ -38,6 +38,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path='/purches' element={<Purches />} />
+        <Route path='/blog' element={<Blog />} />
         <Route path="myprofile" element={<MyProfile />} />
         <Route path="/dashboard/:dashboardId" element={<RequireAuth>
           <DashBoard />
